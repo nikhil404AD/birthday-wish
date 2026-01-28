@@ -17,9 +17,14 @@ body {
 }
 
 input {
+textarea {
   width: 90%;
+  height: 60px;
   padding: 8px;
   margin: 6px 0;
+  resize: none;
+}
+
 }
 
 button {
