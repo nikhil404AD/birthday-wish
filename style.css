@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  width: 300px;
+}
+
+input {
+  width: 90%;
+  padding: 8px;
+  margin: 6px 0;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #ff4081;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e73370;
+}
+
+.hidden {
+  display: none;
+}
+
+#cake {
+  margin-top: 20px;
+}
+
+.cake-body {
+  width: 120px;
+  height: 60px;
+  background: #d2691e;
+  margin: 0 auto;
+  border-radius: 0 0 10px 10px;
+}
+
+.candle {
+  width: 10px;
+  height: 30px;
+  background: white;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+}
+
+.flame {
+  width: 14px;
+  height: 14px;
+  background: orange;
+  border-radius: 50%;
+  position: absolute;
+  top: -15px;
+  left: -2px;
+  animation: flicker 0.5s infinite alternate;
+}
+
+@keyframes flicker {
+  from { transform: scale(1); }
+  to { transform: scale(1.2); }
+}
+
+.hint {
+  font-size: 14px;
+  color: #555;
+}
